@@ -1,0 +1,17 @@
+<style>
+  ul {
+    background-color: #FDEDEC;
+  }
+</style>
+<ul>
+  <div class="w3-content" style="max-width:900px">
+    <h1 class="w3-center">Posts List</h1>
+    <ul>
+      <li style="list-style-type: none" *ngFor="let post of postList;">
+        <b>{{post.id}}.</b> {{post.title}} <br> : {{post.body}}
+
+      </li>
+
+    </ul>
+  </div>
+</ul>
