@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html>
-<title>PoomizZZ World Eiei</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-  body {
-    font-family: "Times New Roman", Georgia, Serif;
-  }
-
-  ul{
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    font-family: "Playfair Display";
-    letter-spacing: 5px;
-  }
-</style>
-<body>
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
-
-    <a class="w3-bar-item w3-button" routerLink="">User</a>
-    <a class="w3-bar-item w3-button" routerLink="about">About us</a>
-    <a class="w3-bar-item w3-button" routerLink="homework"> Homework </a>
+<div id='fullPage'>
+  <app-header></app-header>
+  <div id="content">
+    <router-outlet></router-outlet>
   </div>
+  <app-footer></app-footer>
 </div>
-  <br><br>
-</body>
-
-<router-outlet></router-outlet>
-</html>
